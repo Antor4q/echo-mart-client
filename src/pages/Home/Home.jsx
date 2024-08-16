@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import useAxios from "../../hooks/useAxios";
 
 
 const Home = () => {
@@ -6,15 +7,38 @@ const Home = () => {
     const [products,setProducts] = useState([])
     const [price,setPrice] = useState(9500)
     const [title,setTitle] = useState("")
+    const axiosPublic = useAxios()
+    const totalProducts = products?.length
+    const perPageProducts = 10
+    const pages = Math.ceil(totalProducts / perPageProducts)
+    const page = [...Array(pages).keys()]
+    const [currentPage,setCurrentPage] = useState(1)
+
     console.log(price)
     console.log(title)
+    console.log(pages)
+   
+   
 
     useEffect(()=>{
-        fetch("/products.json")
-        .then(res => res.json())
-        .then(data => setProducts(data))
-    },[])
+      axiosPublic.get("/products")
+      .then(data => {
+         setProducts(data?.data)
+      })
+    },[axiosPublic,title])
 
+
+    const handlePrev = () => {
+        if(currentPage > 1){
+            setCurrentPage(currentPage - 1)
+        }
+    }
+
+    const handleNext = () => {
+        if(currentPage < page.length){
+            setCurrentPage( currentPage + 1)
+        }
+    }
    
     return (
         <div>
@@ -97,6 +121,18 @@ const Home = () => {
                             </>)
                         }
                     </div>
+                    <div className="flex lg:w-3/4 mb-20 gap-4 justify-end mt-10">
+                   
+                   <button onClick={()=>handlePrev()} className="btn btn-outline">Previous</button>
+                    {
+                       page?.map((item,index) => <>
+                        <button 
+                        onClick={()=>setCurrentPage( item + 1)}
+                        className={`btn btn-outline  ${currentPage === item+1 && 'bg-[#0D6EFD] border-none text-white'}`} key={index}>{item + 1}</button>
+                       </>)
+                    }
+                    <button onClick={()=>handleNext()} className="btn btn-outline">Next</button>
+               </div>
                 </div>
             </div>
         </div>
