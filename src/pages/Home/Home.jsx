@@ -8,7 +8,7 @@ const Home = () => {
     const [price,setPrice] = useState(9500)
     const [title,setTitle] = useState("")
     const axiosPublic = useAxios()
-    const totalProducts = products?.length
+    const totalProducts = 38
     const perPageProducts = 10
     const pages = Math.ceil(totalProducts / perPageProducts)
     const page = [...Array(pages).keys()]
@@ -16,16 +16,16 @@ const Home = () => {
 
     console.log(price)
     console.log(title)
-    console.log(pages)
+    console.log(currentPage)
    
    
 
     useEffect(()=>{
-      axiosPublic.get("/products")
+      axiosPublic.get("/products",{params:{title,currentPage,perPageProducts}})
       .then(data => {
          setProducts(data?.data)
       })
-    },[axiosPublic,title])
+    },[axiosPublic,title,currentPage,perPageProducts])
 
 
     const handlePrev = () => {
@@ -128,7 +128,7 @@ const Home = () => {
                        page?.map((item,index) => <>
                         <button 
                         onClick={()=>setCurrentPage( item + 1)}
-                        className={`btn btn-outline  ${currentPage === item+1 && 'bg-[#0D6EFD] border-none text-white'}`} key={index}>{item + 1}</button>
+                        className={`btn btn-outline  ${currentPage === item+1 && 'bg-[#FF6F3C] border-none text-white'}`} key={index}>{item + 1}</button>
                        </>)
                     }
                     <button onClick={()=>handleNext()} className="btn btn-outline">Next</button>
