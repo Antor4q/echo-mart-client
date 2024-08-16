@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import useAxios from "../../hooks/useAxios";
+import useProducts from "../../hooks/useProducts";
 
 
 const Home = () => {
@@ -8,15 +9,17 @@ const Home = () => {
     const [price,setPrice] = useState(9500)
     const [title,setTitle] = useState("")
     const axiosPublic = useAxios()
-    const totalProducts = 38
+    
+    const totalProducts = useProducts() || 0
     const perPageProducts = 10
     const pages = Math.ceil(totalProducts / perPageProducts)
     const page = [...Array(pages).keys()]
     const [currentPage,setCurrentPage] = useState(1)
-
-    console.log(price)
-    console.log(title)
-    console.log(currentPage)
+    
+   
+    
+  
+    
    
    
 
