@@ -1,0 +1,384 @@
+[
+  {
+    "productName": "Hoco EW72 ANC TWS Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A high-end smartphone with a stunning display and advanced camera features.",
+    "price": 1250,
+    "category": "TWS Earbuds",
+    "ratings": 4.2,
+    "productCreationDate": "2024-08-15",
+    "brandName": "Hoco"
+  },
+  {
+    "productName": "A4Tech OP-620D 2X Click Optical Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "The OP-620D 2X Click Optical Mouse is a budget-friendly option for everyday use.",
+    "price": 500,
+    "category": "Mouse",
+    "ratings": 4.1,
+    "productCreationDate": "2024-07-23",
+    "brandName": "A4Tech"
+  },
+  {
+    "productName": "Colmi P71 Calling Smartwatch",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A budget-friendly smartwatch with voice calling, health monitoring, and smart notifications.",
+    "price": 1100,
+    "category": "Smartwatch",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-16",
+    "brandName": "Colmi"
+  },
+  {
+    "productName": "Remax Cozypods W30N TWS Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation, offering good sound quality and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-02",
+    "brandName": "Remax"
+  },
+  {
+    "productName": "Imiki SE1 Smartwatch",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A feature-packed smartwatch offering health monitoring, voice calling, and smart notifications.",
+    "price": 1100,
+    "category": "Smartwatch",
+    "ratings": 4.6,
+    "productCreationDate": "2024-07-22",
+    "brandName": "Imiki"
+  },
+  {
+    "productName": "A4Tech MS1033 RGB Wired Gaming Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A high-performance gaming mouse with customizable RGB lighting and programmable buttons.",
+    "price": 1500,
+    "category": "Mouse",
+    "ratings": 4.5,
+    "productCreationDate": "2024-07-23",
+    "brandName": "A4Tech"
+  },
+  {
+    "productName": "Colmi P28 Plus Calling Smartwatch",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A budget-friendly smartwatch with a 1.9-inch HD display, voice calling, and health monitoring.",
+    "price": 800,
+    "category": "Smartwatch",
+    "ratings": 4.4,
+    "productCreationDate": "2024-08-11",
+    "brandName": "Colmi"
+  },
+  {
+    "productName": "Hoco F805 Wired Gaming Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A reliable wired gaming mouse with programmable buttons and customizable settings.",
+    "price": 1300,
+    "category": "Mouse",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-11",
+    "brandName": "Hoco"
+  },
+  {
+    "productName": "Remax QCY HT07 ANC TWS Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation, good sound quality, and long battery life.",
+    "price": 1900,
+    "category": "TWS Earbuds",
+    "ratings": 4.7,
+    "productCreationDate": "2024-08-13",
+    "brandName": "Remax"
+  },
+  {
+    "productName": "Imiki MT550 Multi Mode Bluetooth Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A versatile Bluetooth mouse with multiple connectivity options and ergonomic design.",
+    "price": 1200,
+    "category": "Mouse",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-12",
+    "brandName": "Imiki"
+  },
+  {
+    "productName": "Hoco MT550 Multi Mode Bluetooth Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A versatile Bluetooth mouse with multiple connectivity options and ergonomic design.",
+    "price": 1200,
+    "category": "Mouse",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-12",
+    "brandName": "Hoco"
+  },
+  {
+    "productName": "Colmi AU-MH501 Professional Headphones",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Professional-grade headphones with superior sound quality and comfortable design.",
+    "price": 13500,
+    "category": "Headphones",
+    "ratings": 4.4,
+    "productCreationDate": "2024-07-29",
+    "brandName": "Colmi"
+  },
+  {
+    "productName": "A4Tech H111 Stereo Headset",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A comfortable and budget-friendly stereo headset with clear sound quality.",
+    "price": 9500,
+    "category": "Headphones",
+    "ratings": 4.1,
+    "productCreationDate": "2024-07-25",
+    "brandName": "A4Tech"
+  },
+  {
+    "productName": "Imiki AT7 Bluetooth Wireless Headphone",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "High-quality wireless headphones with a sleek design and excellent sound performance.",
+    "price": 1100,
+    "category": "Headphones",
+    "ratings": 4.4,
+    "productCreationDate": "2024-08-12",
+    "brandName": "Imiki"
+  },
+  {
+    "productName": "Remax F805 Wired Gaming Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A reliable wired gaming mouse with programmable buttons and customizable settings.",
+    "price": 1300,
+    "category": "Mouse",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-11",
+    "brandName": "Remax"
+  },
+  {
+    "productName": "Hoco ES15 Wireless Bluetooth Headphones",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Premium wireless headphones with excellent sound quality and a comfortable fit.",
+    "price": 12500,
+    "category": "Headphones",
+    "ratings": 4.4,
+    "productCreationDate": "2024-08-14",
+    "brandName": "Hoco"
+  },
+  {
+    "productName": "A4Tech Hoco EW51 ANC True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-01",
+    "brandName": "A4Tech"
+  },
+  {
+    "productName": "Colmi MT550 Multi Mode Bluetooth Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A versatile Bluetooth mouse with multiple connectivity options and ergonomic design.",
+    "price": 1200,
+    "category": "Mouse",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-12",
+    "brandName": "Colmi"
+  },
+  {
+    "productName": "Remax Hoco EW51 ANC True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-01",
+    "brandName": "Remax"
+  },
+  {
+    "productName": "Hoco B40 Outdoor Speaker",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A portable outdoor speaker with powerful sound and water resistance.",
+    "price": 3500,
+    "category": "Speaker",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-15",
+    "brandName": "Hoco"
+  },
+  {
+    "productName": "Imiki B20 Outdoor Speaker",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A portable outdoor speaker with powerful sound and water resistance.",
+    "price": 3500,
+    "category": "Speaker",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-15",
+    "brandName": "Imiki"
+  },
+  {
+    "productName": "A4Tech Bluetooth Multi Mode Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A versatile Bluetooth mouse with multiple connectivity options and ergonomic design.",
+    "price": 1200,
+    "category": "Mouse",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-12",
+    "brandName": "A4Tech"
+  },
+  {
+    "productName": "Remax Hoco EW51 ANC True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-01",
+    "brandName": "Remax"
+  },
+  {
+    "productName": "Imiki B40 Outdoor Speaker",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A portable outdoor speaker with powerful sound and water resistance.",
+    "price": 3500,
+    "category": "Speaker",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-15",
+    "brandName": "Imiki"
+  },
+  {
+    "productName": "Hoco MT550 Multi Mode Bluetooth Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A versatile Bluetooth mouse with multiple connectivity options and ergonomic design.",
+    "price": 1200,
+    "category": "Mouse",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-12",
+    "brandName": "Hoco"
+  },
+  {
+    "productName": "Colmi Hoco EW51 ANC True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-01",
+    "brandName": "Colmi"
+  },
+  {
+    "productName": "A4Tech TWS Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "High-quality TWS earbuds with superior sound and noise-canceling features.",
+    "price": 1500,
+    "category": "TWS Earbuds",
+    "ratings": 4.4,
+    "productCreationDate": "2024-08-11",
+    "brandName": "A4Tech"
+  },
+  {
+    "productName": "Imiki Hoco EW51 ANC True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-01",
+    "brandName": "Imiki"
+  },
+  {
+    "productName": "Remax B40 Outdoor Speaker",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A portable outdoor speaker with powerful sound and water resistance.",
+    "price": 3500,
+    "category": "Speaker",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-15",
+    "brandName": "Remax"
+  },
+  {
+    "productName": "Colmi Bluetooth Multi Mode Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A versatile Bluetooth mouse with multiple connectivity options and ergonomic design.",
+    "price": 1200,
+    "category": "Mouse",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-12",
+    "brandName": "Colmi"
+  },
+  {
+    "productName": "Hoco EW51 ANC True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-01",
+    "brandName": "Hoco"
+  },
+  {
+    "productName": "Imiki EW51 ANC True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-01",
+    "brandName": "Imiki"
+  },
+  {
+    "productName": "A4Tech B40 Outdoor Speaker",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A portable outdoor speaker with powerful sound and water resistance.",
+    "price": 3500,
+    "category": "Speaker",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-15",
+    "brandName": "A4Tech"
+  },
+  {
+    "productName": "Remax Bluetooth Multi Mode Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A versatile Bluetooth mouse with multiple connectivity options and ergonomic design.",
+    "price": 1200,
+    "category": "Mouse",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-12",
+    "brandName": "Remax"
+  },
+  {
+    "productName": "Colmi TWS Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "High-quality TWS earbuds with superior sound and noise-canceling features.",
+    "price": 1500,
+    "category": "TWS Earbuds",
+    "ratings": 4.4,
+    "productCreationDate": "2024-08-11",
+    "brandName": "Colmi"
+  },
+  {
+    "productName": "Hoco EW51 ANC True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-01",
+    "brandName": "Hoco"
+  },
+  {
+    "productName": "A4Tech EW51 ANC True Wireless Earbuds",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "Affordable earbuds with active noise cancellation and long battery life.",
+    "price": 1200,
+    "category": "TWS Earbuds",
+    "ratings": 4.5,
+    "productCreationDate": "2024-08-01",
+    "brandName": "A4Tech"
+  },
+  {
+    "productName": "Imiki Bluetooth Multi Mode Mouse",
+    "productImage": "https://i.ibb.co/196mGpY/tws1.jpg",
+    "description": "A versatile Bluetooth mouse with multiple connectivity options and ergonomic design.",
+    "price": 1200,
+    "category": "Mouse",
+    "ratings": 4.3,
+    "productCreationDate": "2024-08-12",
+    "brandName": "Imiki"
+  }
+]
+
+
