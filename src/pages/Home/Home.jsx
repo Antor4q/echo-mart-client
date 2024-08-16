@@ -9,6 +9,7 @@ const Home = () => {
     const [price,setPrice] = useState(9500)
     const [title,setTitle] = useState("")
     const axiosPublic = useAxios()
+    const [sortProd,setSortProd] = useState("")
     
     const totalProducts = useProducts() || 0
     const perPageProducts = 10
@@ -17,18 +18,18 @@ const Home = () => {
     const [currentPage,setCurrentPage] = useState(1)
     
    
-    
+    console.log(sortProd)
   
     
    
    
 
     useEffect(()=>{
-      axiosPublic.get("/products",{params:{title,currentPage,perPageProducts}})
+      axiosPublic.get("/products",{params:{title,currentPage,perPageProducts,sortProd}})
       .then(data => {
          setProducts(data?.data)
       })
-    },[axiosPublic,title,currentPage,perPageProducts])
+    },[axiosPublic,title,currentPage,perPageProducts,sortProd])
 
 
     const handlePrev = () => {
@@ -92,11 +93,11 @@ const Home = () => {
                 <button className="px-4 py-1  bg-[#FF6F3C] rounded-full hover:bg-[#FC2E01] text-white">Filter</button>
                 </div>
                 <div className="w-4/5 ml-6">
-                    <select className="select my-2 w-full max-w-xs">
+                    <select  onChange={(e)=>setSortProd(e.target.value)} className="select my-2 w-full max-w-xs">
                     <option disabled selected>Sort by</option>
-                    <option>Low to high price</option>
-                    <option>High to low price</option>
-                    <option>Date added (New first)</option>
+                    <option value="lowToHigh">Low to high price</option>
+                    <option value="highToLow">High to low price</option>
+                    <option value="dateAdded">Date added (New first)</option>
                 
                     </select>
                     <div className="grid lg:grid-cols-3 grid-cols-2 gap-8">
@@ -116,6 +117,7 @@ const Home = () => {
                                      <p>ট{product?.price}</p>
                                      <p>{product?.ratings} ratings</p>
                                      </div>
+                                     <p>{product?.productCreationDate}</p>
                                     <div className="card-actions">
                                     <button className="btn bg-[#FF6F3C] hover:bg-[#FC2E01] text-white">Add to cart</button>
                                     </div>
