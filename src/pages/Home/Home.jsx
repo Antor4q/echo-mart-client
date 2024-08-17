@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import useAxios from "../../hooks/useAxios";
 import useProducts from "../../hooks/useProducts";
+
 
 
 const Home = () => {
@@ -12,8 +13,7 @@ const Home = () => {
     const [sortProd,setSortProd] = useState("")
    
     const [perPageProducts,setPerPageProducts] = useState(10);
-
-    
+   
     const totalProducts = useProducts() || 0
    
     const pages = Math.ceil(totalProducts / perPageProducts)

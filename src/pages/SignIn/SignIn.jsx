@@ -1,17 +1,27 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+
+import { Link, useNavigate } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
+import toast, { Toaster } from "react-hot-toast";
 
 
 const SignIn = () => {
 
-    const [error,setError] = useState("")
+   const {signIn} = useAuth()
+   const navigate = useNavigate()
 
     const handleSignUp = e => {
         e.preventDefault()
         const form = e.target
         const email = form.email.value
         const password = form.password.value
-        console.log(email, password)
+        signIn(email, password)
+        .then(result => {
+            if(result){
+                toast.success("You have successfully logged in")
+                navigate("/")
+            }
+        })
+        .then((error)=>console.log(error))
     }
     return (
         <div className="flex  min-h-screen  items-center justify-center">
@@ -47,6 +57,7 @@ const SignIn = () => {
                     <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#FF6F3C] rounded-lg hover:bg-[#FC2E01]  focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
                         SignIn
                     </button>
+                    <Toaster />
                  
                 </div>
                 </form>
