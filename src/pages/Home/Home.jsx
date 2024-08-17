@@ -6,32 +6,40 @@ import useProducts from "../../hooks/useProducts";
 const Home = () => {
 
     const [products,setProducts] = useState([])
-    const [price,setPrice] = useState(9500)
+    const [price,setPrice] = useState(13500)
     const [title,setTitle] = useState("")
     const axiosPublic = useAxios()
     const [sortProd,setSortProd] = useState("")
+   
+    const [perPageProducts,setPerPageProducts] = useState(10);
+
     
     const totalProducts = useProducts() || 0
-    const perPageProducts = 10
+   
     const pages = Math.ceil(totalProducts / perPageProducts)
     const page = [...Array(pages).keys()]
     const [currentPage,setCurrentPage] = useState(1)
+
+    const [category,setCategory] = useState("")
+    const [brand,setBrand] = useState("")
     
    
-    console.log(sortProd)
-  
-    
-   
+    const handleFilter = () =>{
+       
+      console.log(price, category, brand)
+      
+    }
    
 
     useEffect(()=>{
+    
       axiosPublic.get("/products",{params:{title,currentPage,perPageProducts,sortProd}})
       .then(data => {
          setProducts(data?.data)
       })
     },[axiosPublic,title,currentPage,perPageProducts,sortProd])
 
-
+ 
     const handlePrev = () => {
         if(currentPage > 1){
             setCurrentPage(currentPage - 1)
@@ -66,34 +74,41 @@ const Home = () => {
                 <div className="w-1/5">
                     <p className="font-medium my-2">Price range</p>
                     <p>500 - {price}</p>
-                    <input type="range" min={500} max={9500} value={price} onChange={(e)=>setPrice(e.target.value)}  className="range range-xs" />
+                    <input type="range" min={500} max={13500} value={price} onChange={(e)=>setPrice(e.target.value)}  className="range range-xs" />
                     <div className="my-3">
                     <p className="font-semibold">Product categories</p>
-                    <div className="ml-2">
-                    <p>All</p>
-                    <p>Tws</p>
-                    <p>Smartwatch</p>
-                    <p>Mouse</p>
-                    <p>Headphone</p>
-                    <p>Speaker</p>
-                    </div>
+                        <div className="ml-2 ">
+                        <select onChange={(e)=>setCategory(e.target.value)}   className="select select-bordered my-2 w-full max-w-xs">
+                        <option disabled selected>All</option>
+                        <option value="Tws">Tws</option>
+                        <option value="Smartwatch">Smartwatch</option>
+                        <option value="Mouse">Mouse</option>
+                        <option value="Headphone">Headphone</option>
+                        <option value="Speaker">Speaker</option>
+                        
+                        </select>
+                        </div>
                   </div>
                     <div className="my-3">
                     <p className="font-semibold">Brands</p>
                     <div className="ml-2">
-                    <p>All</p>
-                    <p>Hoco</p>
-                    <p>A4Tech</p>
-                    <p>Colmi</p>
-                    <p>Imiki</p>
-                    <p>Remax</p>
+                   
+                        <select onChange={(e)=>setBrand(e.target.value)}  className="select select-bordered my-2 w-full max-w-xs">
+                        <option disabled selected>All</option>
+                        <option value="Hoco">Hoco</option>
+                        <option value="A4Tech">A4Tech</option>
+                        <option value="Colmi">Colmi</option>
+                        <option value="Imiki">Imiki</option>
+                        <option value="Remax">Remax</option>
+                        
+                        </select>
                     
                     </div>
                 </div>
-                <button className="px-4 py-1  bg-[#FF6F3C] rounded-full hover:bg-[#FC2E01] text-white">Filter</button>
+                <button onClick={handleFilter} className="px-4 py-1  bg-[#FF6F3C] rounded-full hover:bg-[#FC2E01] text-white">Filter</button>
                 </div>
                 <div className="w-4/5 ml-6">
-                    <select  onChange={(e)=>setSortProd(e.target.value)} className="select my-2 w-full max-w-xs">
+                    <select name="sort" id="sort" onChange={(e)=>setSortProd(e.target.value)} className="select my-2 w-full max-w-xs">
                     <option disabled selected>Sort by</option>
                     <option value="lowToHigh">Low to high price</option>
                     <option value="highToLow">High to low price</option>
@@ -114,7 +129,7 @@ const Home = () => {
                                     <h2 className="text-xl font-semibold">{product?.productName}</h2>
                                     <p>{product?.description}</p>
                                      <div className="flex justify-between">
-                                     <p>ট{product?.price}</p>
+                                     <p>BDT {product?.price}</p>
                                      <p>{product?.ratings} ratings</p>
                                      </div>
                                      <p>{product?.productCreationDate}</p>

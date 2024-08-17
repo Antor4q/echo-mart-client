@@ -41,7 +41,7 @@ const Navbar = () => {
                     <li><NavLink style={({isActive})=> isActive? {color: " #8B4513",background:"none"}:{}} to="/contact">Contact </NavLink></li>
                 </ul>
               </div>
-                <button className="btn ">LogOut</button>
+                <Link to="/signIn" className="btn ">SignIn</Link>
             </div>
             </div>
         </div>
