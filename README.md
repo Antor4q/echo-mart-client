@@ -2,6 +2,8 @@
 
 Live link: https://echo-mart.web.app
 
+server code:  https://github.com/Antor4q/echo-mart-server
+
 This is a full-stack web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. 
 The project focuses on implementing essential functionalities such as pagination, searching, categorization, 
 and sorting of products. Firebase has been used for authentication purposes.
