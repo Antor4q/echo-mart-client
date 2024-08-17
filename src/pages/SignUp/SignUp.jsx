@@ -9,7 +9,7 @@ import toast, { Toaster } from "react-hot-toast";
 const SignUp = () => {
 
     
-    const {signUp} = useAuth()
+    const {signUp,googleSign} = useAuth()
     const navigate = useNavigate()
 
     const handleSignUp = e => {
@@ -28,6 +28,16 @@ const SignUp = () => {
         })
         .then(error=>console.log(error))
     }
+
+    const handleGoogle = () => {
+        googleSign()
+        .then(result => {
+            if(result){
+                toast.success("You have successfully signIn")
+                navigate("/")
+            }
+        })
+    }
     return (
         <div className="flex  min-h-screen  items-center justify-center">
         <div className="flex flex-row-reverse  w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl">
@@ -35,7 +45,7 @@ const SignUp = () => {
 
             <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
                 <div className="flex justify-center mx-auto">
-                    <p className="text-2xl font-semibold">SignIn</p>
+                    <p className="text-2xl font-semibold">SignUp</p>
                 </div>
 
                
@@ -79,8 +89,11 @@ const SignUp = () => {
                     <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
                    
                 </div>
-                <button className="btn my-2 w-full">Google</button>
+                <button onClick={()=>handleGoogle} className="btn my-2 w-full">Google</button>
+                <Toaster />
+
                 <p className="text-center">Already have an account? <Link className="text-[#FF6F3C]" to="/signIn">SignIn</Link></p>
+                
             </div>
         </div>
        </div>

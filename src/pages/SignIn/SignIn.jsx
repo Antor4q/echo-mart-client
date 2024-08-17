@@ -6,7 +6,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 const SignIn = () => {
 
-   const {signIn} = useAuth()
+   const {signIn,googleSign} = useAuth()
    const navigate = useNavigate()
 
     const handleSignUp = e => {
@@ -23,6 +23,18 @@ const SignIn = () => {
         })
         .then((error)=>console.log(error))
     }
+
+    const handleGoogle = () => {
+        googleSign()
+        .then(result => {
+            if(result){
+                toast.success("You have successfully signIn")
+                navigate("/")
+            }
+        })
+        .then(error => console.log(error))
+    }
+
     return (
         <div className="flex  min-h-screen  items-center justify-center">
         <div className="flex flex-row-reverse  w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl">
@@ -70,7 +82,9 @@ const SignIn = () => {
                     <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
                    
                 </div>
-                <button className="btn my-2 w-full">Google</button>
+                <button onClick={()=>handleGoogle()} className="btn my-2 w-full">Google</button>
+                <Toaster />
+
                 <p className="text-center">Don`t have an account? <Link className="text-[#FF6F3C]" to="/signUp">SignUp</Link></p>
             </div>
         </div>
