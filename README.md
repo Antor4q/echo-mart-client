@@ -1,8 +1,32 @@
-# React + Vite
+# EchoMart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live link: https://echo-mart.web.app
 
-Currently, two official plugins are available:
+This is a full-stack web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. 
+The project focuses on implementing essential functionalities such as pagination, searching, categorization, 
+and sorting of products. Firebase has been used for authentication purposes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features: 
+   1. Pagination: Efficiently loads products and displays navigation for pages.
+   2. Searching: Search products based on the product name.
+   3. Categorization: Filter products by brand name, category name, and price range. Filters can be used individually or combined.
+   4. Sorting: Sort products by price (low to high, high to low) or by date added (newest first)
+Technologies used:
+  1. Frontend: React.js, CSS, Tailwind CSS, daisyUi
+  2. Backend: Node.js, Express.js, MongoDB.
+  3. Firebase account for authentication.
+
+Getting started :
+   Frontend - 
+   git clone  https://github.com/Antor4q/echo-mart-client
+   cd echo-mart-client
+   npm i
+   Create a .env file and add your Firebase configuration.
+   npm run dev
+   
+   Backend - 
+   git clone  https://github.com/Antor4q/echo-mart-server
+   cd echo-mart-server
+   npm i
+   Create a .env file and add your mongoDB user and password.
+   nodemon index.js
