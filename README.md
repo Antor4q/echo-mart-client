@@ -18,15 +18,15 @@ Technologies used:
 
 Getting started :
    Frontend - 
-   git clone  https://github.com/Antor4q/echo-mart-client
-   cd echo-mart-client
-   npm i
-   Create a .env file and add your Firebase configuration.
-   npm run dev
+   1. git clone  https://github.com/Antor4q/echo-mart-client,
+   2. cd echo-mart-client,
+   3. npm i,
+   4. Create a .env file and add your Firebase configuration,
+   5. npm run dev.
    
    Backend - 
-   git clone  https://github.com/Antor4q/echo-mart-server
-   cd echo-mart-server
-   npm i
-   Create a .env file and add your mongoDB user and password.
-   nodemon index.js
+   1. git clone  https://github.com/Antor4q/echo-mart-server,
+   2. cd echo-mart-server,
+   3. npm i,
+   4. Create a .env file and add your mongoDB user and password,
+   5. nodemon index.js
