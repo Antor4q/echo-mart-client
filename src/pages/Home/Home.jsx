@@ -22,22 +22,28 @@ const Home = () => {
 
     const [category,setCategory] = useState("")
     const [brand,setBrand] = useState("")
-    
+
+    const [p,setP] = useState(13500)
+    const [cat,setCat] = useState("")
+    const [br,setBr] = useState("")
    
     const handleFilter = () =>{
        
-      console.log(price, category, brand)
+      
+      setP(price)
+      setCat(category)
+      setBr(brand)
       
     }
-   
+   console.log(p, cat, br)
 
     useEffect(()=>{
     
-      axiosPublic.get("/products",{params:{title,currentPage,perPageProducts,sortProd}})
+      axiosPublic.get("/products",{params:{title,currentPage,perPageProducts,sortProd,p,cat,br}})
       .then(data => {
          setProducts(data?.data)
       })
-    },[axiosPublic,title,currentPage,perPageProducts,sortProd])
+    },[axiosPublic,title,currentPage,perPageProducts,sortProd,p,cat,br])
 
  
     const handlePrev = () => {
