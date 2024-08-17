@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div>
             {/* className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center" */}
-            <div className="navbar text-white border-b-2 bg-[#FC2E01] rounded-full container lg:px-24 px-2 pl-0 py-4 mx-auto md:flex md:justify-between md:items-center">
+            <div className="navbar text-white border-b-2 bg-[#FC2E01] lg:rounded-full container lg:px-24 px-2 pl-0 py-4 mx-auto md:flex md:justify-between md:items-center">
             <div className="navbar-start">
                 <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,13 +24,13 @@ const Navbar = () => {
                 </div>
                 <ul
                     tabIndex={0}
-                    className="menu  menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    className="menu  menu-sm dropdown-content bg-base-100 text-black rounded-box z-[1] mt-3 w-52 p-2 shadow">
                     <li><NavLink style={({isActive})=> isActive? {color: " #8B4513",background:"none"}:{}} to="/">Home </NavLink></li>
                     <li><NavLink style={({isActive})=> isActive? {color: " #8B4513",background:"none"}:{}} to="/about">About </NavLink></li>
                     <li><NavLink style={({isActive})=> isActive? {color: " #8B4513",background:"none"}:{}} to="/contact">Contact </NavLink></li>
                 </ul>
                 </div>
-                <Link to="/" className="text-3xl font-bold text-white">EchoMart</Link>
+                <Link to="/" className="lg:text-3xl text-xl font-bold text-white">EchoMart</Link>
             </div>
             
             <div className="navbar-end">

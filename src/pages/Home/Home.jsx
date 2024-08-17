@@ -35,7 +35,7 @@ const Home = () => {
       setBr(brand)
       
     }
-   console.log(p, cat, br)
+   
 
     useEffect(()=>{
     
@@ -60,7 +60,7 @@ const Home = () => {
    
     return (
         <div>
-            <div className="w-1/3 mx-auto">
+            <div className="md:w-1/3 md:mx-auto">
             <label className="input input-bordered flex items-center gap-2">
             <input type="text" onChange={(e)=>{setTitle(e.target.value)}} className="grow" placeholder="Search by name" />
             <svg
@@ -77,7 +77,7 @@ const Home = () => {
             
             </div>
             <div className="mt-10 flex lg:flex-row flex-col">
-                <div className="w-1/5">
+                <div className="lg:w-1/5 md:w-2/5">
                     <p className="font-medium my-2">Price range</p>
                     <p>500 - {price}</p>
                     <input type="range" min={500} max={13500} value={price} onChange={(e)=>setPrice(e.target.value)}  className="range range-xs" />
@@ -121,43 +121,43 @@ const Home = () => {
                     <option value="dateAdded">Date added (New first)</option>
                 
                     </select>
-                    <div className="grid lg:grid-cols-3 grid-cols-2 gap-8">
+                    <div className="grid lg:grid-cols-3 grid-cols-2 lg:gap-8 gap-1">
                         {
                             products?.map(product => <>
-                              <div className="card hover:shadow-lg border bg-base-100 ">
-                                <figure className="px-6 pt-6">
+                              <div className="card w-full hover:shadow-lg border bg-base-100 ">
+                                <figure className="lg:px-6  lg:pt-6">
                                     <img
                                     src={product?.productImage}
                                     alt="Shoes"
                                     className="rounded-xl h-[150px]" />
                                 </figure>
-                                <div className="card-body">
-                                    <h2 className="text-xl font-semibold">{product?.productName}</h2>
-                                    <p>{product?.description}</p>
-                                     <div className="flex justify-between">
+                                <div className="md:card-body p-1">
+                                    <h2 className="lg:text-xl text-base font-medium lg:font-semibold">{product?.productName}</h2>
+                                    <p className="hidden md:flex">{product?.description}</p>
+                                     <div className="flex lg:flex-row flex-col lg:justify-between">
                                      <p>BDT {product?.price}</p>
                                      <p>{product?.ratings} ratings</p>
                                      </div>
                                      <p>{product?.productCreationDate}</p>
-                                    <div className="card-actions">
-                                    <button className="btn bg-[#FF6F3C] hover:bg-[#FC2E01] text-white">Add to cart</button>
+                                    <div className="card-actions py-1 items-center lg:items-start">
+                                    <button className="btn btn-sm lg:btn-md    bg-[#FF6F3C] hover:bg-[#FC2E01] text-white">Add to cart</button>
                                     </div>
                                 </div>
                                 </div>
                             </>)
                         }
                     </div>
-                    <div className="flex lg:w-3/4 mb-20 gap-4 justify-end mt-10">
+                    <div className="flex lg:w-3/4 mb-20 gap-4 lg:justify-end justify-center mt-10">
                    
-                   <button onClick={()=>handlePrev()} className="btn btn-outline">Previous</button>
+                   <button onClick={()=>handlePrev()} className="btn btn-sm lg:btn-md btn-outline">Previous</button>
                     {
                        page?.map((item,index) => <>
                         <button 
                         onClick={()=>setCurrentPage( item + 1)}
-                        className={`btn btn-outline  ${currentPage === item+1 && 'bg-[#FF6F3C] border-none text-white'}`} key={index}>{item + 1}</button>
+                        className={`btn btn-sm lg:btn-md btn-outline  ${currentPage === item+1 && 'bg-[#FF6F3C] border-none text-white'}`} key={index}>{item + 1}</button>
                        </>)
                     }
-                    <button onClick={()=>handleNext()} className="btn btn-outline">Next</button>
+                    <button onClick={()=>handleNext()} className="btn btn-sm lg:btn-md btn-outline">Next</button>
                </div>
                 </div>
             </div>
