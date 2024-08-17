@@ -47,6 +47,7 @@ const AuthProvider = ({children}) => {
         googleSign,
         logOut,
     }
+    
     return (
        <EchoContext.Provider value={userInfo}>
          {children}
